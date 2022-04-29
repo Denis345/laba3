@@ -67,7 +67,7 @@ int scanDirectory(char* dir)
         fprintf(stderr, "error! could not open the dir %s\n", dir);
         return 1;
     }
-    int scanRes;
+   
     // reading all files in directory
     while ((curFile = readdir(dirStream)) != NULL) {
         //if the file is not dir
